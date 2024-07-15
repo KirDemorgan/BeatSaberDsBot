@@ -13,12 +13,14 @@ import static org.example.BeatSaberStats.ScoreSaberWorker.getUserPPScoreSaber;
 import static org.example.Logger.Logger.LOGGER;
 
 public class Bot extends ListenerAdapter {
-    private Map<String, String> roleRanges;
+    private Map<String, String> roleRangesBeatLeader;
+    private Map<String, String> roleRangesScoreSaber;
 
     public Bot() {
         try {
             ObjectMapper mapper = new ObjectMapper();
-            roleRanges = mapper.readValue(new File(getClass().getClassLoader().getResource("roles.json").toURI()), Map.class);
+            roleRangesBeatLeader = mapper.readValue(new File(getClass().getClassLoader().getResource("rolesBeatLeader.json").toURI()), Map.class);
+            roleRangesScoreSaber = mapper.readValue(new File(getClass().getClassLoader().getResource("rolesScoreSaber.json").toURI()), Map.class);
         } catch (Exception e) {
             LOGGER.warning("Failed to load role ranges: " + e.getMessage());
         }
@@ -40,7 +42,7 @@ public class Bot extends ListenerAdapter {
                     return;
                 }
                 int userScore = Integer.parseInt(ppString);
-                String roleToAssign = findRoleForScore(userScore);
+                String roleToAssign = findRoleForScoreBeatLeader(userScore);
                 if (roleToAssign != null) {
                     Objects.requireNonNull(event.getGuild()).addRoleToMember(UserSnowflake.fromId(userId), event.getGuild().getRolesByName(roleToAssign, true).get(0)).queue();
                     event.reply("Ваша роль успешно синхронизирована с BeatLeader и назначена роль: " + roleToAssign).setEphemeral(true).queue();
@@ -74,7 +76,7 @@ public class Bot extends ListenerAdapter {
                 }
                 // Convert ppString to a decimal and then to an integer for role assignment
                 int userScore = (int) Math.round(Double.parseDouble(ppString));
-                String roleToAssign = findRoleForScore(userScore);
+                String roleToAssign = findRoleForScoreScoreSaber(userScore);
                 if (roleToAssign != null) {
                     if (event.getGuild() == null || event.getGuild().getRolesByName(roleToAssign, true).isEmpty()) {
                         LOGGER.warning("Guild is null or role not found for: " + roleToAssign);
@@ -93,13 +95,25 @@ public class Bot extends ListenerAdapter {
         }
     }
 
-    private String findRoleForScore(int score) {
-        for (String range : roleRanges.keySet()) {
+    private String findRoleForScoreBeatLeader(int score) {
+        for (String range : roleRangesBeatLeader.keySet()) {
             String[] parts = range.split("/");
             int min = Integer.parseInt(parts[0]);
             int max = Integer.parseInt(parts[1]);
             if (score >= min && score <= max) {
-                return roleRanges.get(range);
+                return roleRangesBeatLeader.get(range);
+            }
+        }
+        return null;
+    }
+
+    private String findRoleForScoreScoreSaber(int score) {
+        for (String range : roleRangesScoreSaber.keySet()) {
+            String[] parts = range.split("/");
+            int min = Integer.parseInt(parts[0]);
+            int max = Integer.parseInt(parts[1]);
+            if (score >= min && score <= max) {
+                return roleRangesScoreSaber.get(range);
             }
         }
         return null;
