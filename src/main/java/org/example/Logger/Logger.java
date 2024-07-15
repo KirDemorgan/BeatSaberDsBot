@@ -1,6 +1,6 @@
 package org.example.Logger;
 
-import org.example.BeatLeaderWorker.BeatLeaderWorker;
+import org.example.BeatSaberStats.BeatLeaderWorker;
 
 import java.io.IOException;
 import java.util.logging.FileHandler;

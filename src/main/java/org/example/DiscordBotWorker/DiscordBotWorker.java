@@ -7,6 +7,7 @@ import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.events.session.ReadyEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
+import net.dv8tion.jda.api.interactions.commands.OptionType;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 import org.example.Config.ConfigLoader;
 import org.jetbrains.annotations.NotNull;
@@ -42,6 +43,7 @@ public class DiscordBotWorker extends ListenerAdapter {
 
         if (guild != null) {
             guild.upsertCommand("link", "Связать ваш аккаунт с BeatLeader").queue();
+            guild.upsertCommand("link2", "Связать ваш аккаунт с ScoreSaber").addOption(OptionType.STRING, "id", "ID пользователя ScoreSaber", true).queue();
         } else {
             System.err.println("Guild not found with ID: " + guildId);
         }

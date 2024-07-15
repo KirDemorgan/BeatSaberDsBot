@@ -1,4 +1,4 @@
-package org.example.BeatLeaderWorker;
+package org.example.BeatSaberStats;
 import java.math.BigDecimal;
 import java.net.*;
 import java.io.*;

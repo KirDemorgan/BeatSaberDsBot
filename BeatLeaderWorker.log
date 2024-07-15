@@ -1,110 +1,188 @@
-июл. 15, 2024 10:52:10 PM org.example.BeatLeaderWorker.BeatLeaderWorker main
+июл. 15, 2024 10:52:10 PM org.example.BeatSaberStats.BeatLeaderWorker main
 INFO: BeatLeaderWorker started
-июл. 15, 2024 10:52:10 PM org.example.BeatLeaderWorker.BeatLeaderWorker main
+июл. 15, 2024 10:52:10 PM org.example.BeatSaberStats.BeatLeaderWorker main
 INFO: Fetching data from BeatLeader API
-июл. 15, 2024 10:56:30 PM org.example.BeatLeaderWorker.BeatLeaderWorker main
+июл. 15, 2024 10:56:30 PM org.example.BeatSaberStats.BeatLeaderWorker main
 INFO: BeatLeaderWorker started
-июл. 15, 2024 10:56:30 PM org.example.BeatLeaderWorker.BeatLeaderWorker main
+июл. 15, 2024 10:56:30 PM org.example.BeatSaberStats.BeatLeaderWorker main
 INFO: Fetching data from BeatLeader API
-июл. 15, 2024 10:56:45 PM org.example.BeatLeaderWorker.BeatLeaderWorker main
+июл. 15, 2024 10:56:45 PM org.example.BeatSaberStats.BeatLeaderWorker main
 INFO: BeatLeaderWorker started
-июл. 15, 2024 10:56:45 PM org.example.BeatLeaderWorker.BeatLeaderWorker main
+июл. 15, 2024 10:56:45 PM org.example.BeatSaberStats.BeatLeaderWorker main
 INFO: Fetching data from BeatLeader API
-июл. 15, 2024 11:01:56 PM org.example.BeatLeaderWorker.BeatLeaderWorker main
+июл. 15, 2024 11:01:56 PM org.example.BeatSaberStats.BeatLeaderWorker main
 INFO: BeatLeaderWorker started
-июл. 15, 2024 11:01:56 PM org.example.BeatLeaderWorker.BeatLeaderWorker main
+июл. 15, 2024 11:01:56 PM org.example.BeatSaberStats.BeatLeaderWorker main
 INFO: Fetching data from BeatLeader API
-июл. 15, 2024 11:02:56 PM org.example.BeatLeaderWorker.BeatLeaderWorker main
+июл. 15, 2024 11:02:56 PM org.example.BeatSaberStats.BeatLeaderWorker main
 INFO: BeatLeaderWorker started
 "Fetching data from BeatLeader API
-июл. 15, 2024 11:03:08 PM org.example.BeatLeaderWorker.BeatLeaderWorker main
+июл. 15, 2024 11:03:08 PM org.example.BeatSaberStats.BeatLeaderWorker main
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
-июл. 15, 2024 11:03:24 PM org.example.BeatLeaderWorker.BeatLeaderWorker main
+июл. 15, 2024 11:03:24 PM org.example.BeatSaberStats.BeatLeaderWorker main
 INFO: 
 BeatLeaderWorker started
 Fetching data from BeatLeader API
-июл. 15, 2024 11:03:42 PM org.example.BeatLeaderWorker.BeatLeaderWorker main
+июл. 15, 2024 11:03:42 PM org.example.BeatSaberStats.BeatLeaderWorker main
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
-июл. 15, 2024 11:08:11 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 15, 2024 11:08:11 PM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
-июл. 15, 2024 11:09:54 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 15, 2024 11:09:54 PM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
-июл. 15, 2024 11:12:35 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 15, 2024 11:12:35 PM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
 июл. 15, 2024 11:12:36 PM org.example.Main main
 WARNING: Failed to fetch data from BeatLeader API[Ljava.lang.StackTraceElement;@19d37183
-июл. 15, 2024 11:40:37 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 15, 2024 11:40:37 PM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
-июл. 15, 2024 11:40:52 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 15, 2024 11:40:52 PM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
-июл. 15, 2024 11:41:29 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 15, 2024 11:41:29 PM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
-июл. 15, 2024 11:41:40 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 15, 2024 11:41:40 PM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
-июл. 15, 2024 11:41:42 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 15, 2024 11:41:42 PM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
-июл. 15, 2024 11:44:10 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 15, 2024 11:44:10 PM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
-июл. 15, 2024 11:44:38 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 15, 2024 11:44:38 PM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
-июл. 15, 2024 11:44:44 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 15, 2024 11:44:44 PM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
-июл. 15, 2024 11:45:30 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 15, 2024 11:45:30 PM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
-июл. 15, 2024 11:46:40 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 15, 2024 11:46:40 PM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
-июл. 15, 2024 11:46:50 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 15, 2024 11:46:50 PM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
-июл. 15, 2024 11:48:54 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 15, 2024 11:48:54 PM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
-июл. 15, 2024 11:49:08 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 15, 2024 11:49:08 PM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
-июл. 15, 2024 11:49:08 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 15, 2024 11:49:08 PM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 WARNING: Player alias is missing or null for userDiscordID: 443738059335532555
-июл. 15, 2024 11:49:54 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 15, 2024 11:49:54 PM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
-июл. 15, 2024 11:50:21 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 15, 2024 11:50:21 PM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
-июл. 16, 2024 12:00:38 AM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 16, 2024 12:00:38 AM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
-июл. 16, 2024 12:48:51 AM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 16, 2024 12:48:51 AM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
-июл. 16, 2024 12:50:10 AM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 16, 2024 12:50:10 AM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
-июл. 16, 2024 1:01:20 AM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 16, 2024 1:01:20 AM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
-июл. 16, 2024 1:10:23 AM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 16, 2024 1:10:23 AM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
-июл. 16, 2024 1:13:51 AM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 16, 2024 1:13:51 AM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
 июл. 16, 2024 1:13:51 AM org.example.DiscordBotWorker.Bot onSlashCommandInteraction
 WARNING: Error fetching user PP
-июл. 16, 2024 1:14:24 AM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+июл. 16, 2024 1:14:24 AM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
+июл. 16, 2024 1:42:59 AM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 16, 2024 1:45:21 AM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 16, 2024 1:53:56 AM org.example.DiscordBotWorker.Bot onSlashCommandInteraction
+WARNING: User ID is null for command /link2
+июл. 16, 2024 1:54:02 AM org.example.DiscordBotWorker.Bot onSlashCommandInteraction
+WARNING: User ID is null for command /link2
+июл. 16, 2024 1:55:12 AM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
+SEVERE: Failed to fetch user PP from ScoreSaber: A JSONObject text must end with '}' at 1 [character 2 line 1]
+июл. 16, 2024 1:55:12 AM org.example.DiscordBotWorker.Bot onSlashCommandInteraction
+WARNING: PP string is null for user ID: 76561198166652820
+июл. 16, 2024 1:57:06 AM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 16, 2024 1:57:07 AM org.example.DiscordBotWorker.Bot onSlashCommandInteraction
+WARNING: Error fetching user PP for user ID: 76561198166652820 - A JSONObject text must end with '}' at 1 [character 2 line 1]
+июл. 16, 2024 1:58:01 AM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 16, 2024 1:58:02 AM org.example.DiscordBotWorker.Bot onSlashCommandInteraction
+WARNING: Error fetching user PP for user ID: 76561198166652820 - A JSONObject text must end with '}' at 1 [character 2 line 1]
+июл. 16, 2024 1:58:27 AM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
+INFO: BeatLeaderWorker started
+Fetching data from ScoreSaber API
+июл. 16, 2024 1:58:27 AM org.example.DiscordBotWorker.Bot onSlashCommandInteraction
+WARNING: Error fetching user PP for user ID: 76561198166652820 - A JSONObject text must end with '}' at 1 [character 2 line 1]
+июл. 16, 2024 1:59:39 AM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
+INFO: BeatLeaderWorker started
+Fetching data from ScoreSaber API
+июл. 16, 2024 1:59:39 AM org.example.DiscordBotWorker.Bot onSlashCommandInteraction
+WARNING: Error fetching user PP for user ID: 76561198166652820 - A JSONObject text must end with '}' at 1 [character 2 line 1]
+июл. 16, 2024 2:00:37 AM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
+INFO: BeatLeaderWorker started
+Fetching data from ScoreSaber API
+июл. 16, 2024 2:00:37 AM org.example.DiscordBotWorker.Bot onSlashCommandInteraction
+WARNING: Error fetching user PP for user ID: 76561198166652820 - A JSONObject text must end with '}' at 1 [character 2 line 1]
+июл. 16, 2024 2:01:54 AM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
+INFO: BeatLeaderWorker started
+Fetching data from ScoreSaber API
+июл. 16, 2024 2:01:55 AM org.example.DiscordBotWorker.Bot onSlashCommandInteraction
+WARNING: Error fetching user PP for user ID: 76561198166652820 - A JSONObject text must end with '}' at 1 [character 2 line 1]
+июл. 16, 2024 2:02:26 AM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
+INFO: Fetching data from ScoreSaber API for userID: 76561198166652820
+июл. 16, 2024 2:02:26 AM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
+SEVERE: Failed to fetch or parse ScoreSaber data for userID: 76561198166652820 - A JSONObject text must end with '}' at 1 [character 2 line 1]
+июл. 16, 2024 2:02:26 AM org.example.DiscordBotWorker.Bot onSlashCommandInteraction
+WARNING: PP string is null for user ID: 76561198166652820
+июл. 16, 2024 2:03:42 AM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
+INFO: Fetching data from ScoreSaber API for userID: 76561198166652820
+июл. 16, 2024 2:03:43 AM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
+SEVERE: Failed to fetch or parse ScoreSaber data for userID: 76561198166652820 - A JSONObject text must end with '}' at 1 [character 2 line 1]
+июл. 16, 2024 2:03:43 AM org.example.DiscordBotWorker.Bot onSlashCommandInteraction
+WARNING: PP string is null for user ID: 76561198166652820
+июл. 16, 2024 2:04:30 AM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
+INFO: Fetching data from ScoreSaber API for userID: 76561198166652820
+июл. 16, 2024 2:04:31 AM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
+INFO: Raw response: {  "id": "76561198166652820",  "name": "Nexuk",  "profilePicture": "https://cdn.scoresaber.com/avatars/76561198166652820.jpg",  "bio": null,  "country": "BR",  "pp": 5879.476,  "rank": 7970,  "countryRank": 53,  "role": null,  "badges": [],  "histories": "7608,7616,7621,7632,7632,7650,7647,7645,7671,7674,7692,7701,7710,7731,7741,7743,7752,7776,7808,7804,7812,7801,7812,7809,7805,7800,7799,7793,7786,8110,7882,7894,7904,7913,7917,7919,7925,7911,7936,7947,7957,7955,999999,999999,7978,7976,7970,7967,7977",  "permissions": 0,  "banned": false,  "inactive": false,  "scoreStats": {    "totalScore": 154850008,    "totalRankedScore": 96390562,    "averageRankedAccuracy": 80.78391,    "totalPlayCount": 267,    "rankedPlayCount": 145,    "replaysWatched": 0  },  "firstSeen": "2021-10-25T12:25:58.000Z"}
+июл. 16, 2024 2:04:31 AM org.example.DiscordBotWorker.Bot onSlashCommandInteraction
+WARNING: Error fetching user PP for user ID: 76561198166652820 - For input string: "5879.476"
+июл. 16, 2024 2:06:33 AM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
+INFO: Fetching data from ScoreSaber API for userID: 76561198166652820
+июл. 16, 2024 2:06:34 AM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
+INFO: Raw response: {  "id": "76561198166652820",  "name": "Nexuk",  "profilePicture": "https://cdn.scoresaber.com/avatars/76561198166652820.jpg",  "bio": null,  "country": "BR",  "pp": 5879.476,  "rank": 7970,  "countryRank": 53,  "role": null,  "badges": [],  "histories": "7608,7616,7621,7632,7632,7650,7647,7645,7671,7674,7692,7701,7710,7731,7741,7743,7752,7776,7808,7804,7812,7801,7812,7809,7805,7800,7799,7793,7786,8110,7882,7894,7904,7913,7917,7919,7925,7911,7936,7947,7957,7955,999999,999999,7978,7976,7970,7967,7977",  "permissions": 0,  "banned": false,  "inactive": false,  "scoreStats": {    "totalScore": 154850008,    "totalRankedScore": 96390562,    "averageRankedAccuracy": 80.78391,    "totalPlayCount": 267,    "rankedPlayCount": 145,    "replaysWatched": 0  },  "firstSeen": "2021-10-25T12:25:58.000Z"}
+июл. 16, 2024 2:06:34 AM org.example.DiscordBotWorker.Bot onSlashCommandInteraction
+WARNING: Error fetching user PP for user ID: 76561198166652820 - For input string: "5879.476"
+июл. 16, 2024 2:08:35 AM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
+INFO: Fetching data from ScoreSaber API for userID: 76561198166652820
+июл. 16, 2024 2:08:36 AM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
+INFO: Raw response: {  "id": "76561198166652820",  "name": "Nexuk",  "profilePicture": "https://cdn.scoresaber.com/avatars/76561198166652820.jpg",  "bio": null,  "country": "BR",  "pp": 5879.476,  "rank": 7970,  "countryRank": 53,  "role": null,  "badges": [],  "histories": "7608,7616,7621,7632,7632,7650,7647,7645,7671,7674,7692,7701,7710,7731,7741,7743,7752,7776,7808,7804,7812,7801,7812,7809,7805,7800,7799,7793,7786,8110,7882,7894,7904,7913,7917,7919,7925,7911,7936,7947,7957,7955,999999,999999,7978,7976,7970,7967,7977",  "permissions": 0,  "banned": false,  "inactive": false,  "scoreStats": {    "totalScore": 154850008,    "totalRankedScore": 96390562,    "averageRankedAccuracy": 80.78391,    "totalPlayCount": 267,    "rankedPlayCount": 145,    "replaysWatched": 0  },  "firstSeen": "2021-10-25T12:25:58.000Z"}
+июл. 16, 2024 2:08:36 AM org.example.DiscordBotWorker.Bot onSlashCommandInteraction
+WARNING: Error fetching user PP for user ID: 76561198166652820 - For input string: "5879.476"
+июл. 16, 2024 2:09:42 AM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
+INFO: Fetching data from ScoreSaber API for userID: 76561198166652820
+июл. 16, 2024 2:09:43 AM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
+INFO: Raw response: {  "id": "76561198166652820",  "name": "Nexuk",  "profilePicture": "https://cdn.scoresaber.com/avatars/76561198166652820.jpg",  "bio": null,  "country": "BR",  "pp": 5879.476,  "rank": 7970,  "countryRank": 53,  "role": null,  "badges": [],  "histories": "7608,7616,7621,7632,7632,7650,7647,7645,7671,7674,7692,7701,7710,7731,7741,7743,7752,7776,7808,7804,7812,7801,7812,7809,7805,7800,7799,7793,7786,8110,7882,7894,7904,7913,7917,7919,7925,7911,7936,7947,7957,7955,999999,999999,7978,7976,7970,7967,7977",  "permissions": 0,  "banned": false,  "inactive": false,  "scoreStats": {    "totalScore": 154850008,    "totalRankedScore": 96390562,    "averageRankedAccuracy": 80.78391,    "totalPlayCount": 267,    "rankedPlayCount": 145,    "replaysWatched": 0  },  "firstSeen": "2021-10-25T12:25:58.000Z"}

@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.BeatLeaderWorker.BeatLeaderWorker;
+import org.example.BeatSaberStats.BeatLeaderWorker;
 import org.example.DiscordBotWorker.DiscordBotWorker;
 
 import java.util.Arrays;
@@ -10,7 +10,6 @@ import static org.example.Logger.Logger.LOGGER;
 public class Main {
     public static void main(String[] args) {
 
-        BeatLeaderWorker beatLeaderWorker = new BeatLeaderWorker();
         DiscordBotWorker botWorker = new DiscordBotWorker();
 
         try {
