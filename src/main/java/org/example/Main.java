@@ -2,7 +2,6 @@ package org.example;
 
 import org.example.BeatLeaderWorker.BeatLeaderWorker;
 import org.example.DiscordBotWorker.DiscordBotWorker;
-import org.example.Logger.Bot;
 
 import java.util.Arrays;
 

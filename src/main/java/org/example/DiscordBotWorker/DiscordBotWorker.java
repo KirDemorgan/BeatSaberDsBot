@@ -1,35 +1,49 @@
 package org.example.DiscordBotWorker;
 
+import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Activity;
+import net.dv8tion.jda.api.entities.Guild;
+import net.dv8tion.jda.api.events.session.ReadyEvent;
+import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import net.dv8tion.jda.api.requests.GatewayIntent;
-import org.example.Logger.Bot;
+import org.example.Config.ConfigLoader;
+import org.jetbrains.annotations.NotNull;
 
-import javax.security.auth.login.LoginException;
 import java.util.List;
 
-public class DiscordBotWorker {
-    Bot bot = new Bot();
-
-    private final String token = "MTI2MjQ3MjQ4NTM2NjkyNzUwMw.G5Armu.WIOriJ2k9cfW1VW7BZRTpKYiEuX-GWaJqwRVEU";
+public class DiscordBotWorker extends ListenerAdapter {
+    ConfigLoader configLoader = new ConfigLoader();
+    private JDA jda;
 
     public void startBot() {
+        String token = configLoader.getToken();
         try {
-            JDABuilder jdaBuilder = (JDABuilder) JDABuilder
-                    .createDefault(token)
-                    .enableIntents(
-                            List.of(
-                                    GatewayIntent.GUILD_MESSAGES,
-                                    GatewayIntent.MESSAGE_CONTENT
-                            )
-                    )
+            jda = JDABuilder.createDefault(token)
+                    .enableIntents(List.of(
+                            GatewayIntent.GUILD_MESSAGES,
+                            GatewayIntent.MESSAGE_CONTENT))
                     .setStatus(OnlineStatus.DO_NOT_DISTURB)
-                    .setActivity(Activity.watching("Смотрю статистику"))
-                    .addEventListeners(new Bot());
-            jdaBuilder.build();
-        }   catch (Exception e) {
+                    .setActivity(Activity.watching("статистику по Beat Saber"))
+                    .addEventListeners(this, new Bot())
+                    .build();
+        } catch (Exception e) {
             System.err.println("Error starting the bot: " + e.getMessage());
+        }
+    }
+
+    @Override
+    public void onReady(@NotNull ReadyEvent event) {
+        super.onReady(event);
+
+        String guildId = configLoader.getGuildId();
+        Guild guild = jda.getGuildById(guildId);
+
+        if (guild != null) {
+            guild.upsertCommand("link", "Связать ваш аккаунт с BeatLeader").queue();
+        } else {
+            System.err.println("Guild not found with ID: " + guildId);
         }
     }
 }
