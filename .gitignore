@@ -11,6 +11,8 @@ target/
 *.iws
 *.iml
 *.ipr
+.idea
+.resources/config.properties
 
 ### Eclipse ###
 .apt_generated
@@ -35,4 +37,5 @@ build/
 .vscode/
 
 ### Mac OS ###
-.DS_Store
+.DS_Store!/.idea/
+!/src/main/resources/config.properties
