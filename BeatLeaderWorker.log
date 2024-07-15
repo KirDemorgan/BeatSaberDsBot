@@ -30,3 +30,58 @@ Fetching data from BeatLeader API
 июл. 15, 2024 11:08:11 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
+июл. 15, 2024 11:09:54 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 15, 2024 11:12:35 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 15, 2024 11:12:36 PM org.example.Main main
+WARNING: Failed to fetch data from BeatLeader API[Ljava.lang.StackTraceElement;@19d37183
+июл. 15, 2024 11:40:37 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 15, 2024 11:40:52 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 15, 2024 11:41:29 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 15, 2024 11:41:40 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 15, 2024 11:41:42 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 15, 2024 11:44:10 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 15, 2024 11:44:38 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 15, 2024 11:44:44 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 15, 2024 11:45:30 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 15, 2024 11:46:40 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 15, 2024 11:46:50 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 15, 2024 11:48:54 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 15, 2024 11:49:08 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 15, 2024 11:49:08 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+WARNING: Player alias is missing or null for userDiscordID: 443738059335532555
+июл. 15, 2024 11:49:54 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 15, 2024 11:50:21 PM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API

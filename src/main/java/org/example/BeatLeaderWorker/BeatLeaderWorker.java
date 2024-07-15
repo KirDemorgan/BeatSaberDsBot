@@ -7,7 +7,7 @@ import org.json.JSONObject;
 import static org.example.Logger.Logger.LOGGER;
 
 public class BeatLeaderWorker {
-    public static void getUserPP(String userDiscordID) throws Exception {
+    public static String getUserPP(String userDiscordID) throws Exception {
         System.out.println("BeatLeaderWorker started");
         System.out.println("Fetching data from BeatLeader API");
 
@@ -24,10 +24,12 @@ public class BeatLeaderWorker {
         JSONObject obj = new JSONObject(in.readLine());
 
         BigDecimal playerScore = obj.getBigDecimal("lastWeekPp");
-        String playerName = obj.getString("alias");
 
-        System.out.println("\n" + playerName + "'s last week pp: " + playerScore);
+
+        System.out.println("\n" + userDiscordID + "'s last week pp: " + playerScore);
 
         in.close();
+
+        return playerScore.toString();
     }
 }
