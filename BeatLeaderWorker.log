@@ -97,3 +97,14 @@ Fetching data from BeatLeader API
 июл. 16, 2024 1:01:20 AM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
 INFO: BeatLeaderWorker started
 Fetching data from BeatLeader API
+июл. 16, 2024 1:10:23 AM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 16, 2024 1:13:51 AM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 16, 2024 1:13:51 AM org.example.DiscordBotWorker.Bot onSlashCommandInteraction
+WARNING: Error fetching user PP
+июл. 16, 2024 1:14:24 AM org.example.BeatLeaderWorker.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
