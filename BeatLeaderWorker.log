@@ -218,3 +218,42 @@ WARNING: Error fetching user PP for user ID: 76561198166652820 - For input strin
 INFO: Fetching data from ScoreSaber API for userID: 76561198166652820
 июл. 16, 2024 2:24:58 AM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
 INFO: Raw response: {  "id": "76561198166652820",  "name": "Nexuk",  "profilePicture": "https://cdn.scoresaber.com/avatars/76561198166652820.jpg",  "bio": null,  "country": "BR",  "pp": 5879.476,  "rank": 7971,  "countryRank": 53,  "role": null,  "badges": [],  "histories": "7608,7616,7621,7632,7632,7650,7647,7645,7671,7674,7692,7701,7710,7731,7741,7743,7752,7776,7808,7804,7812,7801,7812,7809,7805,7800,7799,7793,7786,8110,7882,7894,7904,7913,7917,7919,7925,7911,7936,7947,7957,7955,999999,999999,7978,7976,7970,7967,7977",  "permissions": 0,  "banned": false,  "inactive": false,  "scoreStats": {    "totalScore": 154850008,    "totalRankedScore": 96390562,    "averageRankedAccuracy": 80.78391,    "totalPlayCount": 267,    "rankedPlayCount": 145,    "replaysWatched": 0  },  "firstSeen": "2021-10-25T12:25:58.000Z"}
+июл. 16, 2024 5:08:41 PM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 16, 2024 5:09:09 PM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 16, 2024 5:09:10 PM org.example.DiscordBotWorker.Bot onSlashCommandInteraction
+WARNING: Error fetching user PP for user ID: 443738059335532555 - Index 0 out of bounds for length 0
+июл. 16, 2024 5:12:19 PM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 16, 2024 5:12:20 PM org.example.DiscordBotWorker.Bot onSlashCommandInteraction
+WARNING: Error fetching user PP for user ID: 443738059335532555 - Index 0 out of bounds for length 0
+июл. 16, 2024 5:12:49 PM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 16, 2024 5:12:49 PM org.example.DiscordBotWorker.Bot onSlashCommandInteraction
+WARNING: Error fetching user PP for user ID: 443738059335532555 - Index 0 out of bounds for length 0
+июл. 16, 2024 5:13:16 PM org.example.BeatSaberStats.BeatLeaderWorker getUserPP
+INFO: BeatLeaderWorker started
+Fetching data from BeatLeader API
+июл. 16, 2024 5:13:16 PM org.example.DiscordBotWorker.Bot onSlashCommandInteraction
+WARNING: Error fetching user PP for user ID: 443738059335532555 - Index 0 out of bounds for length 0
+июл. 16, 2024 5:14:05 PM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
+INFO: Fetching data from ScoreSaber API for userID: 1262502015603314759
+июл. 16, 2024 5:14:06 PM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
+SEVERE: Failed to fetch or parse ScoreSaber data for userID: 1262502015603314759 - https://scoresaber.com/api/player/1262502015603314759/full
+июл. 16, 2024 5:14:06 PM org.example.DiscordBotWorker.Bot onSlashCommandInteraction
+WARNING: PP string is null for user ID: 1262502015603314759
+июл. 16, 2024 5:14:44 PM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
+INFO: Fetching data from ScoreSaber API for userID: 76561198866750478
+июл. 16, 2024 5:14:44 PM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
+INFO: Raw response: {  "id": "76561198866750478",  "name": "Sonex",  "profilePicture": "https://cdn.scoresaber.com/avatars/76561198866750478.jpg",  "bio": null,  "country": "PL",  "pp": 14226.75,  "rank": 175,  "countryRank": 7,  "role": null,  "badges": [],  "histories": "161,162,162,160,161,161,163,161,161,161,162,162,164,164,164,165,166,166,167,167,167,167,167,168,168,168,168,168,172,172,172,172,169,169,169,170,169,169,169,169,169,169,170,171,169,170,172,173,173",  "permissions": 0,  "banned": false,  "inactive": false,  "scoreStats": {    "totalScore": 1634501409,    "totalRankedScore": 677489890,    "averageRankedAccuracy": 95.09941,    "totalPlayCount": 1598,    "rankedPlayCount": 583,    "replaysWatched": 159  },  "firstSeen": "2020-06-01T11:10:11.000Z"}
+июл. 16, 2024 5:14:44 PM org.example.DiscordBotWorker.Bot onSlashCommandInteraction
+WARNING: Error fetching user PP for user ID: 76561198866750478 - The specified ID is not a valid snowflake (Expert). Expecting a valid long value!
+июл. 16, 2024 5:16:08 PM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
+INFO: Fetching data from ScoreSaber API for userID: 76561198866750478
+июл. 16, 2024 5:16:08 PM org.example.BeatSaberStats.ScoreSaberWorker getUserPPScoreSaber
+INFO: Raw response: {  "id": "76561198866750478",  "name": "Sonex",  "profilePicture": "https://cdn.scoresaber.com/avatars/76561198866750478.jpg",  "bio": null,  "country": "PL",  "pp": 14226.75,  "rank": 175,  "countryRank": 7,  "role": null,  "badges": [],  "histories": "161,162,162,160,161,161,163,161,161,161,162,162,164,164,164,165,166,166,167,167,167,167,167,168,168,168,168,168,172,172,172,172,169,169,169,170,169,169,169,169,169,169,170,171,169,170,172,173,173",  "permissions": 0,  "banned": false,  "inactive": false,  "scoreStats": {    "totalScore": 1634501409,    "totalRankedScore": 677489890,    "averageRankedAccuracy": 95.09941,    "totalPlayCount": 1598,    "rankedPlayCount": 583,    "replaysWatched": 159  },  "firstSeen": "2020-06-01T11:10:11.000Z"}

@@ -13,7 +13,7 @@ target/
 *.ipr
 .idea
 .resources/config.properties
-
+src/main/resources/config.properties
 ### Eclipse ###
 .apt_generated
 .classpath
@@ -38,4 +38,5 @@ build/
 
 ### Mac OS ###
 .DS_Store!/.idea/
+!/src/main/resources/config.properties
 !/src/main/resources/config.properties

@@ -1,5 +1,6 @@
 package org.example.DiscordBotWorker;
 
+import net.dv8tion.jda.api.entities.Role;
 import net.dv8tion.jda.api.entities.UserSnowflake;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
@@ -74,17 +75,17 @@ public class Bot extends ListenerAdapter {
                     event.reply("Не удалось получить данные о пользователе.").setEphemeral(true).queue();
                     return;
                 }
-                // Convert ppString to a decimal and then to an integer for role assignment
                 int userScore = (int) Math.round(Double.parseDouble(ppString));
-                String roleToAssign = findRoleForScoreScoreSaber(userScore);
-                if (roleToAssign != null) {
-                    if (event.getGuild() == null || event.getGuild().getRolesByName(roleToAssign, true).isEmpty()) {
-                        LOGGER.warning("Guild is null or role not found for: " + roleToAssign);
+                String roleIdToAssign = findRoleForScoreScoreSaber(userScore);
+                if (roleIdToAssign != null) {
+                    Role role = event.getGuild().getRoleById(roleIdToAssign);
+                    if (role == null) {
+                        LOGGER.warning("Role not found for ID: " + roleIdToAssign);
                         event.reply("Ошибка при назначении роли.").setEphemeral(true).queue();
                         return;
                     }
-                    event.getGuild().addRoleToMember(UserSnowflake.fromId(event.getMember().getId()), event.getGuild().getRolesByName(roleToAssign, true).get(0)).queue();
-                    event.reply("Ваша роль успешно синхронизирована с ScoreSaber и назначена роль: " + roleToAssign).setEphemeral(true).queue();
+                    event.getGuild().addRoleToMember(UserSnowflake.fromId(event.getMember().getId()), role).queue();
+                    event.reply("Ваша роль успешно синхронизирована и назначена.").setEphemeral(true).queue();
                 } else {
                     event.reply("Для ваших поинтов пока нет роли.").setEphemeral(true).queue();
                 }
