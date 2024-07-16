@@ -43,7 +43,10 @@ public class DiscordBotWorker extends ListenerAdapter {
 
         if (guild != null) {
             guild.upsertCommand("link", "Связать ваш аккаунт с BeatLeader").queue();
-            guild.upsertCommand("link2", "Связать ваш аккаунт с ScoreSaber").addOption(OptionType.STRING, "id", "ID пользователя ScoreSaber", true).queue();
+            guild.upsertCommand("link2", "Связать ваш аккаунт с ScoreSaber").
+                    addOption(OptionType.STRING, "id", "ID пользователя ScoreSaber", true)
+                    .queue();
+            guild.upsertCommand("unlink", "Отвязать все роли").queue();
         } else {
             System.err.println("Guild not found with ID: " + guildId);
         }

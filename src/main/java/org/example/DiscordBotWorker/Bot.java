@@ -6,6 +6,7 @@ import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEve
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
+import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
@@ -35,6 +36,31 @@ public class Bot extends ListenerAdapter {
 
         if ("link2".equals(event.getName())) {
             handleLink2Command(event);
+        }
+
+        if ("unlink".equals(event.getName())) {
+            handleRemoveRolesCommand(event);
+        }
+    }
+
+
+    private void handleRemoveRolesCommand(SlashCommandInteractionEvent event) {
+        if (event.getMember() == null) {
+            event.reply("Команда доступна только на серверах.").setEphemeral(true).queue();
+            return;
+        }
+        String userId = event.getMember().getId();
+        try {
+            List<Role> userRoles = event.getGuild().getMemberById(userId).getRoles();
+            userRoles.forEach(role -> {
+                if (roleRangesBeatLeader.containsValue(role.getId()) || roleRangesScoreSaber.containsValue(role.getId())) {
+                    event.getGuild().removeRoleFromMember(UserSnowflake.fromId(userId), role).queue();
+                }
+            });
+            event.reply("Все соответствующие роли удалены.").setEphemeral(true).queue();
+        } catch (Exception e) {
+            LOGGER.warning("Ошибка при удалении ролей для пользователя с ID: " + userId + " - " + e.getMessage());
+            event.reply("Произошла ошибка при удалении ролей.").setEphemeral(true).queue();
         }
     }
 
