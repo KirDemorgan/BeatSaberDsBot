@@ -30,69 +30,83 @@ public class Bot extends ListenerAdapter {
     @Override
     public void onSlashCommandInteraction(SlashCommandInteractionEvent event) {
         if (event.getName().equals("link")) {
-            if (event.getMember() == null) {
-                event.reply("Команда только для серверов.").setEphemeral(true).queue();
-                return;
-            }
-            String userId = event.getMember().getId();
-            try {
-                String ppString = getUserPP(userId);
-                if (ppString == null) {
-                    LOGGER.warning("PP string is null for user ID: " + userId);
-                    event.reply("Не удалось получить данные о пользователе.").setEphemeral(true).queue();
-                    return;
-                }
-                int userScore = Integer.parseInt(ppString);
-                String roleToAssign = findRoleForScoreBeatLeader(userScore);
-                if (roleToAssign != null) {
-                    Objects.requireNonNull(event.getGuild()).addRoleToMember(UserSnowflake.fromId(userId), event.getGuild().getRolesByName(roleToAssign, true).get(0)).queue();
-                    event.reply("Ваша роль успешно синхронизирована с BeatLeader и назначена роль: " + roleToAssign).setEphemeral(true).queue();
-                } else {
-                    event.reply("Для ваших поинтов пока нет роли.").setEphemeral(true).queue();
-                }
-            } catch (Exception e) {
-                LOGGER.warning("Error fetching user PP for user ID: " + userId + " - " + e.getMessage());
-                event.reply("Не удалось привязать профиль.").setEphemeral(true).queue();
-            }
+            handleLinkCommand(event);
         }
 
         if ("link2".equals(event.getName())) {
-            if (event.getMember() == null) {
-                event.reply("Команда только для серверов.").setEphemeral(true).queue();
-                return;
-            }
-            String userId = event.getOption("id") != null ? event.getOption("id").getAsString() : null;
-            if (userId == null) {
-                LOGGER.warning("User ID is null for command /link2");
-                event.reply("ID пользователя не предоставлен.").setEphemeral(true).queue();
-                return;
-            }
+            handleLink2Command(event);
+        }
+    }
 
-            try {
-                String ppString = getUserPPScoreSaber(userId);
-                if (ppString == null) {
-                    LOGGER.warning("PP string is null for user ID: " + userId);
-                    event.reply("Не удалось получить данные о пользователе.").setEphemeral(true).queue();
+    private void handleLinkCommand(SlashCommandInteractionEvent event) {
+        if (event.getMember() == null) {
+            event.reply("Команда только для серверов.").setEphemeral(true).queue();
+            return;
+        }
+        String userId = event.getMember().getId();
+        try {
+            String ppString = getUserPP(userId);
+            if (ppString == null) {
+                LOGGER.warning("PP string is null for user ID: " + userId);
+                event.reply("Не удалось получить данные о пользователе.").setEphemeral(true).queue();
+                return;
+            }
+            int userScore = Integer.parseInt(ppString);
+            String roleToAssign = findRoleForScoreBeatLeader(userScore);
+            if (roleToAssign != null) {
+                Role role = event.getGuild().getRoleById(roleToAssign);
+                if (role == null) {
+                    LOGGER.warning("Role not found for ID: " + roleToAssign);
+                    event.reply("Ошибка при назначении роли.").setEphemeral(true).queue();
                     return;
                 }
-                int userScore = (int) Math.round(Double.parseDouble(ppString));
-                String roleIdToAssign = findRoleForScoreScoreSaber(userScore);
-                if (roleIdToAssign != null) {
-                    Role role = event.getGuild().getRoleById(roleIdToAssign);
-                    if (role == null) {
-                        LOGGER.warning("Role not found for ID: " + roleIdToAssign);
-                        event.reply("Ошибка при назначении роли.").setEphemeral(true).queue();
-                        return;
-                    }
-                    event.getGuild().addRoleToMember(UserSnowflake.fromId(event.getMember().getId()), role).queue();
-                    event.reply("Ваша роль успешно синхронизирована и назначена.").setEphemeral(true).queue();
-                } else {
-                    event.reply("Для ваших поинтов пока нет роли.").setEphemeral(true).queue();
-                }
-            } catch (Exception e) {
-                LOGGER.warning("Error fetching user PP for user ID: " + userId + " - " + e.getMessage());
-                event.reply("Не удалось привязать профиль.").setEphemeral(true).queue();
+                event.getGuild().addRoleToMember(UserSnowflake.fromId(event.getMember().getId()), role).queue();
+                event.reply("Ваша роль успешно синхронизирована и назначена.").setEphemeral(true).queue();
+            }  else {
+                event.reply("Для ваших поинтов пока нет роли.").setEphemeral(true).queue();
             }
+        } catch (Exception e) {
+            LOGGER.warning("Error fetching user PP for user ID: " + userId + " - " + e.getMessage());
+            event.reply("Не удалось привязать профиль.").setEphemeral(true).queue();
+        }
+    }
+
+    private void handleLink2Command(SlashCommandInteractionEvent event) {
+        if (event.getMember() == null) {
+            event.reply("Команда только для серверов.").setEphemeral(true).queue();
+            return;
+        }
+        String userId = event.getOption("id") != null ? event.getOption("id").getAsString() : null;
+        if (userId == null) {
+            LOGGER.warning("User ID is null for command /link2");
+            event.reply("ID пользователя не предоставлен.").setEphemeral(true).queue();
+            return;
+        }
+
+        try {
+            String ppString = getUserPPScoreSaber(userId);
+            if (ppString == null) {
+                LOGGER.warning("PP string is null for user ID: " + userId);
+                event.reply("Не удалось получить данные о пользователе.").setEphemeral(true).queue();
+                return;
+            }
+            int userScore = (int) Math.round(Double.parseDouble(ppString));
+            String roleIdToAssign = findRoleForScoreScoreSaber(userScore);
+            if (roleIdToAssign != null) {
+                Role role = event.getGuild().getRoleById(roleIdToAssign);
+                if (role == null) {
+                    LOGGER.warning("Role not found for ID: " + roleIdToAssign);
+                    event.reply("Ошибка при назначении роли.").setEphemeral(true).queue();
+                    return;
+                }
+                event.getGuild().addRoleToMember(UserSnowflake.fromId(event.getMember().getId()), role).queue();
+                event.reply("Ваша роль успешно синхронизирована и назначена.").setEphemeral(true).queue();
+            } else {
+                event.reply("Для ваших поинтов пока нет роли.").setEphemeral(true).queue();
+            }
+        } catch (Exception e) {
+            LOGGER.warning("Error fetching user PP for user ID: " + userId + " - " + e.getMessage());
+            event.reply("Не удалось привязать профиль.").setEphemeral(true).queue();
         }
     }
 
