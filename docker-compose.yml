@@ -1,0 +1,8 @@
+services:
+  bot:
+    build: .
+    image: beatsaber-bot:latest
+    env_file: .env
+    restart: unless-stopped
+    volumes:
+      - ./logs:/app/logs

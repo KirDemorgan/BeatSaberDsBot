@@ -1,0 +1,6 @@
+{
+  "0/100": "role-beginner",
+  "101/200": "role-intermediate",
+  "201/300": "role-advanced",
+  "301/99999999": "role-expert"
+}
